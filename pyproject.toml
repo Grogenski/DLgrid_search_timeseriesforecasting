@@ -10,11 +10,11 @@ Projeto para previsão de séries temporais utilizando modelos de machine learni
 O projeto implementa um grid search para otimização de hiperparâmetros e possibilita a utilização de três arquiteturas de rede neural: MLP, LSTM e BiLSTM. 
 Os dados utilizados são referentes aos preços de commodities agrícolas, obtidos de fontes públicas.
 """
-authors = ["Seu Nome <seu@email.com>"]
+authors = ["Lucas Grogenski Meloca <lucas.grogenskimeloca@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/seu-usuario/seu-repositorio"
-homepage = "https://github.com/seu-usuario/seu-repositorio"
+repository = "https://github.com/Grogenski/DLgrid_search_timeseriesforecasting/tree/main"
+homepage = "https://github.com/Grogenski/"
 keywords = ["machine learning", "time series forecasting", "MLP", "LSTM", "BiLSTM", "grid search", "commodities"]
 classifiers = [
     "Development Status :: 4 - Beta",
