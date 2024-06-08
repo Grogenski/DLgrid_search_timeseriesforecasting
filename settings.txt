@@ -1,0 +1,15 @@
+{
+'n_in': [33],
+'n_out': [7],
+'n_split': [0.8],
+'n_nodes': [64],
+'stacked_layers': [1],
+'n_features': [1],
+'dropout': [0.2],
+'callback': [[True, 10, True]],
+'epochs': [100],
+'batch_size': [12],
+'learning_rate': [0.001],
+'predict_model': ["MLP", "LSTM", "BiLSTM"],
+'dataset_in': ["CEPEA_SOJA.csv"]
+}

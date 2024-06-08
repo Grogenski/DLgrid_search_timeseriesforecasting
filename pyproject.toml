@@ -1,0 +1,41 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "previsao-series-temporais-ml"
+version = "0.1.0"
+description = """
+Projeto para previsão de séries temporais utilizando modelos de machine learning. 
+O projeto implementa um grid search para otimização de hiperparâmetros e possibilita a utilização de três arquiteturas de rede neural: MLP, LSTM e BiLSTM. 
+Os dados utilizados são referentes aos preços de commodities agrícolas, obtidos de fontes públicas.
+"""
+authors = ["Seu Nome <seu@email.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/seu-usuario/seu-repositorio"
+homepage = "https://github.com/seu-usuario/seu-repositorio"
+keywords = ["machine learning", "time series forecasting", "MLP", "LSTM", "BiLSTM", "grid search", "commodities"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tensorflow = "^2.4.0"
+numpy = "^1.19.5"
+pandas = "^1.2.1"
+matplotlib = "^3.3.3"
+scikit-learn = "^0.24.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+flake8 = "^3.8.4"
+mypy = "^0.800"
