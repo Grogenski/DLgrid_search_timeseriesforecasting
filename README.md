@@ -24,7 +24,6 @@ Este projeto foi desenvolvido para realizar previsões de séries temporais util
   - `.idea/`
   - `datasets/` (contém os datasets para treino e teste)
   - `results/` (contém os resultados das execuções do grid search)
-  - `venv/` (ambiente virtual para gerenciamento de dependências)
 
 - **Arquivos**:
   - `LICENSE`
@@ -47,7 +46,7 @@ Este projeto foi desenvolvido para realizar previsões de séries temporais util
 1. Clone este repositório:
    ```bash
    git clone https://github.com/Grogenski/DLgrid_search_timeseriesforecasting/
-   cd seu-repositorio
+   cd DLgrid_search_timeseriesforecasting
    ```
 
 2. Crie um ambiente virtual:
@@ -127,11 +126,11 @@ Os resultados serão armazenados em uma pasta na diretório `results/` com o nom
 ## Descrição das Funções
 
 - **model_configs()**: Importa as configurações do arquivo `settings.txt` e gera uma lista de listas de configurações.
-- **build_model_MLP(n_in, n_nodes, dropout, stacked_layers)**: Constrói um modelo MLP.
-- **build_model_LSTM(n_in, input_shape, n_nodes, dropout, stacked_layers)**: Constrói um modelo LSTM.
-- **build_model_Bidirecional(n_in, input_shape, n_nodes, dropout, stacked_layers)**: Constrói um modelo BiLSTM.
-- **fit_model(model, learning_rate, callback, x_train, y_train, epochs, batch_size)**: Treina o modelo selecionado.
-- **grid_search(df, cfg, key)**: Função principal que realiza o grid search, formata os datasets, chama as funções de construção e treinamento dos modelos, faz previsões, calcula as métricas MSE e RMSE e gera plots.
+- **build_model_MLP(n_in, n_nodes, dropout, stacked_layers)**:  Constrói um modelo Perceptron Multicamadas (MLP) simples.
+- **build_model_LSTM(n_in, input_shape, n_nodes, dropout, stacked_layers)**: Constrói um modelo LSTM (Long Short-Term Memory) simples.
+- **build_model_Bidirecional(n_in, input_shape, n_nodes, dropout, stacked_layers)**: Constrói um modelo BiLSTM (Bidirectional LSTM) simples.
+- **fit_model(model, learning_rate, callback, x_train, y_train, epochs, batch_size)**: Treina o modelo selecionado com os dados de treinamento.
+- **grid_search(df, cfg, key)**: Realiza um grid search para encontrar os melhores hiperparâmetros, constrói e treina modelos com base nas configurações fornecidas, e avalia os resultados com métricas de desempenho, como o erro quadrático médio (MSE) e a raiz do erro quadrático médio (RMSE), além de gerar plots com os valores preditos contra os reais.
 
 ## Licença
 
