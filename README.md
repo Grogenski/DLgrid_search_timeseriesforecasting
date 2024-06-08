@@ -135,7 +135,7 @@ Os resultados serão armazenados em uma pasta na diretório `results/` com o nom
 
 ## Licença
 
-Este projeto está licenciado sob os termos da licença XYZ. Para mais detalhes, veja o arquivo `LICENSE`.
+Este projeto está licenciado sob os termos da licença MIT. Para mais detalhes, veja o arquivo `LICENSE`.
 
 ---
 
